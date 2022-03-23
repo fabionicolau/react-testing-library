@@ -2,8 +2,10 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../helpers/renderWithRouter';
-import mockedPokemon from '../helpers/mockedPokemon';
+import data from '../data';
 import App from '../App';
+
+const mockedPokemon = data[0];
 
 describe('Testa o comportamento do componente Pokemon', () => {
   test('Testa se é renderizado um card com as informações de determinado pokémon.',
